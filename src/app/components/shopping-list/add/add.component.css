@@ -27,11 +27,11 @@
 }
 
 .first button:hover {
-    background-color: rgba(174, 0, 255, 0.25);
+    background-color: rgba(0, 83, 216, 0.25);
 }
 
 .first button:active {
-    background-color: rgba(174, 0, 255, 0.35);
+    background-color: rgba(0, 83, 216, 0.45);
 }
 
 .second {
@@ -46,7 +46,7 @@
     min-width: 10%;
     width: fit-content;
     height: fit-content;
-    background-color: rgba(174, 0, 255, 0.25);
+    background-color: rgba(0, 83, 216, 0.25);
     margin: 1%;
     padding-top: 1%;
     padding-bottom: 1%;

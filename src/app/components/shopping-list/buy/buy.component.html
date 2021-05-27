@@ -1,9 +1,11 @@
 <div class="content">
-    <div class="description">
+    <div class="cart-text">
         <h2>Cart</h2>
     </div>
-    <div class="item" *ngFor="let item of serviceList.shoppingList">
-        <p [ngClass]="{'buyed' : item.cart == true}">{{item.name}}</p>
-        <button (click)="buy(item)">Buy</button>
+    <div class="item-list">
+        <div class="item" *ngFor="let item of serviceList.shoppingList" #itemList>
+            <p [ngClass]="{'buyed' : item.cart == true}">{{item.name}}</p>
+            <button (click)="buy(item, itemList)">Buy</button>
+        </div>
     </div>
 </div>

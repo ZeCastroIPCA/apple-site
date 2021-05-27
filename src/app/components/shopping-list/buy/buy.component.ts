@@ -17,8 +17,9 @@ export class BuyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  buy(art : Article){
+  buy(art : Article, div : HTMLDivElement){
     art.cart = true
+    div.style.backgroundColor="rgba(0, 173, 216, 0.25)"
   }
 
 }
