@@ -1,0 +1,16 @@
+<div class="footer" #footer *ngIf="!accepted">
+    <div class="cookies-box">
+        <div class="header-box">
+            <div class="header-buttons-box">
+                <div class="header-buttons red" (click)='closeCookies(footer)'></div>
+                <div class="header-buttons yellow"></div>
+                <div class="header-buttons green"></div>
+            </div>
+            <p>Cookies</p>
+        </div>
+        <div class="cookies-text">
+            <p>Aceite as cookies para que a sua informação pessoal possa ser vendida por nós com a sua autorização.</p>
+            <button class="accept" (click)='acceptCookies(footer)'>Aceitar</button>
+        </div>
+    </div>
+</div>

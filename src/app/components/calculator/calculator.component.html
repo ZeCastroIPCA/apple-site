@@ -1,0 +1,30 @@
+<div class="screen">
+    <div class="title">
+        <p>This is a calculator. Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Here</a> for more info!</p>
+    </div>
+    <div class="calculator-box">
+        <div class="header-box">
+            <div class="header-buttons-box">
+                <div class="header-buttons red"></div>
+                <div class="header-buttons yellow"></div>
+                <div class="header-buttons green"></div>
+            </div>
+            <p>Calculator</p>
+        </div>
+        <div class="screen-box">
+            <div class="math-row">
+                <p>{{num1}}</p>
+                <p>{{signal}}</p>
+                <p>{{num2}}</p>
+            </div>
+            <div class="result-row">
+                <p>{{res}}</p>
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" [(ngModel)]="num1" (input)="result()">
+            <input type="text" [(ngModel)]="signal" (input)="result()">
+            <input type="text" [(ngModel)]="num2" (input)="result()">
+        </div>
+    </div>
+</div>

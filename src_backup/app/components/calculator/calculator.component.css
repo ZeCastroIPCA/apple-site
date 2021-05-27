@@ -1,0 +1,122 @@
+.calculator-box {
+    width: 25%;
+    aspect-ratio: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1vh;
+    margin-top: 5vh;
+    box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+    background-color: whitesmoke;
+}
+
+.header-box {
+    aspect-ratio: 16/1;
+}
+
+.screen-box {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(34, 34, 34); */
+    background-color: rgb(34, 34, 34);
+}
+
+.math-row {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.math-row p {
+    color: whitesmoke;
+}
+
+.result-row {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result-row p {
+    color: whitesmoke;
+    font-size: calc(2vw + 6 * ((100vw - 320px) / 380));
+    font-weight: 300;
+}
+
+.math-row,
+.result-row {
+    padding-right: 1vw;
+}
+
+.input-box {
+    width: 100%;
+    height: 75%;
+    aspect-ratio: 0.9/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background-color: rgb(34, 34, 34);*/
+    background-color: whitesmoke;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.input-box input {
+    width: 50%;
+}
+
+@media (max-width:992px) {
+    .header-box p {
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 680));
+    }
+    .calculator-box {
+        width: 50%;
+    }
+    .math-row p {
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 380));
+        font-weight: 300;
+    }
+    .result-row p {
+        font-size: calc(4vw + 6 * ((100vw - 320px) / 380));
+    }
+    .math-row,
+    .result-row {
+        padding-right: 3vw;
+    }
+    .input-box input {
+        width: 60%;
+    }
+    .input-box input {
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 380));
+        font-weight: 300;
+    }
+}
+
+@media (max-width:576px) {
+    .header-box p {
+        font-size: calc(3vw + 6 * ((100vw - 320px) / 680));
+    }
+    .calculator-box {
+        width: 80%;
+    }
+    .math-row p {
+        font-size: calc(5vw + 6 * ((100vw - 320px) / 380));
+        font-weight: 300;
+    }
+    .result-row p {
+        font-size: calc(8vw + 6 * ((100vw - 320px) / 380));
+    }
+    .input-box input {
+        font-size: calc(4vw + 6 * ((100vw - 320px) / 380));
+    }
+}

@@ -1,0 +1,30 @@
+<div class="screen">
+    <div class="title">
+        <p>Welcome to this Angular Project. Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Here</a> for more info!</p>
+    </div>
+    <div class="content">
+        <div class="text-box">
+            <h1>Events and References<br> in Angular</h1>
+            <h2>This page is reserved to events and references.<br> You can change the color of the IPhone below, using one function.<br> You have the choice of six beautiful and unique colors.<br> Choose them wisely as they will be in your IPhone!
+            </h2>
+        </div>
+        <div class="color-picker">
+            <div class="iphone">
+                <img src="assets/images/iphone-purple.png" alt="iphone" #iphone>
+            </div>
+            <div class="colors">
+                <div class="button-title">
+                    <h1>Escolha a cor</h1>
+                </div>
+                <div class="button-colors">
+                    <button class="white" (click)="changeButtonColor(iphone, white)" #white></button>
+                    <button class="black" (click)="changeButtonColor(iphone, black)" #black></button>
+                    <button class="red" (click)="changeButtonColor(iphone, red)" #red></button>
+                    <button class="green" (click)="changeButtonColor(iphone, green)" #green></button>
+                    <button class="blue" (click)="changeButtonColor(iphone, blue)" #blue></button>
+                    <button class="purple" (click)="changeButtonColor(iphone, purple)" #purple></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

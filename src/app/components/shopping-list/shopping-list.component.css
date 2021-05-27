@@ -1,0 +1,70 @@
+.screen {
+    width: 100vw;
+    /*calc(100vw - 17px);*/
+    background-color: black;
+}
+
+.title {
+    background-color: rgba(248, 248, 248, 0.1);
+}
+
+.title p {
+    color: whitesmoke;
+}
+
+.title a {
+    color: rgb(50, 152, 255);
+}
+
+.content:nth-of-type(2) {
+    height: 100%;
+    background-image: url(../../../assets/images/iphone-shop-wallpaper.png);
+    background-position: center;
+    background-size: auto 150%;
+    box-shadow: 0 0 50px 30px black inset;
+}
+
+@keyframes height-half {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 50%;
+    }
+}
+
+@keyframes opacitated {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content>h1,
+.content>h2 {
+    text-align: center;
+}
+
+.content>h1 {
+    color: whitesmoke;
+}
+
+.content>h2 {
+    color: darkgray;
+}
+
+.buttons-nav {
+    width: 20%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content:last-child {
+    display: none;
+    background-color: whitesmoke;
+}
