@@ -64,26 +64,19 @@
     justify-content: space-evenly;
 }
 
+.buttons-nav button {
+    border-radius: 2vh;
+}
+
 .content:last-child {
     display: none;
     background-color: whitesmoke;
 }
 
-@media (min-height: 500px) {
-    button {
-        width: auto;
-        height: 3vh;
-        border-radius: 2vh;
-        font-size: calc(1vh + 6 * ((100vw - 320px) / 680));
-    }
-    .buttons-nav {
-        width: 30%;
-    }
-}
-
 @media (max-width: 992px) {
     button {
         width: 80px;
+        font-size: calc(1vw + 6 * ((100vw - 320px) / 680));
     }
     .buttons-nav {
         width: 35%;

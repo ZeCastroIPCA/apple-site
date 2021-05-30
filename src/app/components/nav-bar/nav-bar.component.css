@@ -49,7 +49,7 @@ a:hover:not(.active) {
 
 @media (max-width: 576px) {
     nav {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

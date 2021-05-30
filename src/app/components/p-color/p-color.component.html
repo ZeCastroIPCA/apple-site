@@ -1,2 +1,21 @@
-<a [routerLink]="['/p-color', 'red']" routerLinkActive="router-link-active">hey</a>
-<router-outlet></router-outlet>
+<div class="screen">
+    <div class="title">
+        <p>Welcome to the color changer. Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Here</a> for more info!</p>
+    </div>
+    <div class="top-div">
+        <div class="title-div">
+            <h1>Change your Iphone Color</h1>
+        </div>
+        <div class="link-div">
+            <button class="black" [routerLink]="['/p-color', 'assets/images/iphone-black.png']" routerLinkActive="router-link-active"></button>
+            <button class="blue" [routerLink]="['/p-color', 'assets/images/iphone-blue.png']" routerLinkActive="router-link-active"></button>
+            <button class="green" [routerLink]="['/p-color', 'assets/images/iphone-green.png']" routerLinkActive="router-link-active"></button>
+            <button class="purple" [routerLink]="['/p-color', 'assets/images/iphone-purple.png']" routerLinkActive="router-link-active"></button>
+            <button class="red" [routerLink]="['/p-color', 'assets/images/iphone-red.png']" routerLinkActive="router-link-active"></button>
+            <button class="white" [routerLink]="['/p-color', 'assets/images/iphone-white.png']" routerLinkActive="router-link-active"></button>
+        </div>
+    </div>
+    <div class="iphone-color">
+        <router-outlet></router-outlet>
+    </div>
+</div>
