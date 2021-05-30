@@ -68,3 +68,33 @@
     display: none;
     background-color: whitesmoke;
 }
+
+@media (min-height: 500px) {
+    button {
+        width: auto;
+        height: 3vh;
+        border-radius: 2vh;
+        font-size: calc(1vh + 6 * ((100vw - 320px) / 680));
+    }
+    .buttons-nav {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    button {
+        width: 80px;
+    }
+    .buttons-nav {
+        width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 680));
+    }
+    .buttons-nav {
+        width: 40%;
+    }
+}

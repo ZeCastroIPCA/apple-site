@@ -13,7 +13,7 @@
 }
 
 .divide-first {
-    padding-top: 1%;
+    margin-top: 0.5%;
 }
 
 .divide-second {
@@ -53,4 +53,55 @@
     padding-left: 0.5%;
     padding-right: 0.5%;
     border-radius: 1vh;
+}
+
+@media (max-width: 992px) {
+    button {
+        width: 80px;
+        border-radius: 2vh;
+        font-size: calc(0.8vw + 6 * ((100vw - 320px) / 680));
+    }
+    input {
+        width: auto;
+        height: 3vh;
+        font-size: calc(0.8vw + 6 * ((100vw - 320px) / 680));
+    }
+    .second .item p {
+        font-size: calc(0.8vw + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media (max-width: 756px) {
+    button {
+        font-size: calc(1.5vw + 6 * ((100vw - 320px) / 680));
+    }
+    input {
+        font-size: calc(1.5vw + 6 * ((100vw - 320px) / 680));
+    }
+    .second .item {
+        min-width: 12%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .second .item p {
+        font-size: calc(1.5vw + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        width: 70px;
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 680));
+    }
+    input {
+        font-size: calc(2vw + 6 * ((100vw - 320px) / 680));
+    }
+    .second .item {
+        min-width: 15%;
+    }
+    .second .item p {
+        font-size: calc(2.2vw + 6 * ((100vw - 320px) / 680));
+    }
 }
