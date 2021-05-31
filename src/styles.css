@@ -121,7 +121,7 @@ a:hover {
 button {
     width: 6vw;
     aspect-ratio: 4/1;
-    border-radius: 1vh;
+    border-radius: 2vh;
     border: 0px solid transparent;
     background-color: linear-gradient(to bottom, lightgray, darkgray);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);

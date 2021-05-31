@@ -9,6 +9,8 @@ import { AddComponent } from './components/shopping-list/add/add.component';
 import { BuyComponent } from './components/shopping-list/buy/buy.component';
 import { PColorComponent } from './components/p-color/p-color.component';
 import { SColorComponent } from './components/p-color/s-color/s-color.component';
+import { DetailsComponent } from './components/anime/details/details.component';
+import { AnimeComponent } from './components/anime/anime.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
@@ -20,9 +22,13 @@ const routes: Routes = [
     {path:"add", component: AddComponent},
     {path:"buy", component: BuyComponent}
   ]},
-  {path:"p-color", component: PColorComponent,
+  {path:"color", component: PColorComponent,
   children:[
     {path:":color", component: SColorComponent}
+  ]},
+  {path:"anime", component: AnimeComponent,
+  children:[
+    {path:":id", component: DetailsComponent}
   ]},
   {path:"404", component: ErrorComponent},
   {path:"**", redirectTo: "404"}

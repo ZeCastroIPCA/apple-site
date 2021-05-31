@@ -15,6 +15,9 @@ import { AddComponent } from './components/shopping-list/add/add.component';
 import { BuyComponent } from './components/shopping-list/buy/buy.component';
 import { PColorComponent } from './components/p-color/p-color.component';
 import { SColorComponent } from './components/p-color/s-color/s-color.component';
+import { AnimeComponent } from './components/anime/anime.component';
+import { DetailsComponent } from './components/anime/details/details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { SColorComponent } from './components/p-color/s-color/s-color.component'
     AddComponent,
     BuyComponent,
     PColorComponent,
-    SColorComponent
+    SColorComponent,
+    AnimeComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

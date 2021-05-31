@@ -1,0 +1,11 @@
+.anime-details {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 2vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

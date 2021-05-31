@@ -1,0 +1,90 @@
+.screen {
+    min-height: calc(100vh - 44px);
+    height: fit-content;
+}
+
+.search-box {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-box h1 {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.input-box {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.3%;
+    padding-bottom: 5%;
+}
+
+.results-box {
+    width: 100%;
+    min-width: 50%;
+    height: fit-content;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw 1vw;
+    position: relative;
+}
+
+.card-anime {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    border: 1vh solid lightgray;
+    transition: 0.3s;
+}
+
+.card-anime:hover {
+    cursor: pointer;
+}
+
+.card-anime img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.description-anime {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.description-anime h2,
+.description-anime p {
+    color: white;
+    padding: 10%;
+}
+
+.description-anime h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.description-anime p {
+    font-size: 1vw;
+    font-weight: 300;
+}
