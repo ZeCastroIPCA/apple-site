@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AnimeService } from 'src/app/services/anime.service';
 
 @Component({
@@ -8,7 +9,10 @@ import { AnimeService } from 'src/app/services/anime.service';
 })
 export class AnimeComponent implements OnInit {
 
-  constructor(private service : AnimeService) { }
+  rt : Router
+  constructor(private route : Router, private service : AnimeService) {
+    this.rt = route
+   }
 
   ngOnInit(): void {
   }

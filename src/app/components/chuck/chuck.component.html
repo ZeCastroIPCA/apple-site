@@ -1,0 +1,30 @@
+<div class="screen">
+    <div class="title">
+        <p>Welcome to Apple Chuck Jokes. Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Here</a> for more info!</p>
+    </div>
+    <div class="intro">
+        <h1>Chuck Jokes</h1>
+        <h2>Laugh More.</h2>
+    </div>
+    <div class="piada">
+        <div class="first">
+            <div class="joke">
+                <h2>{{joke}}</h2>
+            </div>
+            <button (click)="random()">Random</button>
+            <img src="assets/images/chuck1.png" alt="chuck1">
+        </div>
+        <div class="second">
+            <div class="joke">
+                <div *ngIf='api2 !== undefined'>
+                    <h2>{{api2}}</h2>
+                </div>
+            </div>
+            <input type="text" #input>
+            <button class="accept" (click)="search(input.value)">Search</button>
+
+            <img src="assets/images/chuck2.png" alt="chuck2">
+        </div>
+    </div>
+
+</div>

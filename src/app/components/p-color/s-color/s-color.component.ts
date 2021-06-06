@@ -14,7 +14,9 @@ export class SColorComponent implements OnInit {
 
   ngOnInit(): void {
     this.activeRoute.params.subscribe(
-      params => this.color = params.color
+      params => {this.color = params.color
+        console.log(params)
+      }
     )
   }
 }

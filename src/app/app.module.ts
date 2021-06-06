@@ -18,6 +18,7 @@ import { SColorComponent } from './components/p-color/s-color/s-color.component'
 import { AnimeComponent } from './components/anime/anime.component';
 import { DetailsComponent } from './components/anime/details/details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChuckComponent } from './components/chuck/chuck.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     PColorComponent,
     SColorComponent,
     AnimeComponent,
-    DetailsComponent
+    DetailsComponent,
+    ChuckComponent
   ],
   imports: [
     BrowserModule,

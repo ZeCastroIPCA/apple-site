@@ -11,6 +11,7 @@ import { PColorComponent } from './components/p-color/p-color.component';
 import { SColorComponent } from './components/p-color/s-color/s-color.component';
 import { DetailsComponent } from './components/anime/details/details.component';
 import { AnimeComponent } from './components/anime/anime.component';
+import { ChuckComponent } from './components/chuck/chuck.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
@@ -30,9 +31,9 @@ const routes: Routes = [
   children:[
     {path:":id", component: DetailsComponent}
   ]},
+  {path:"chuck", component: ChuckComponent},
   {path:"404", component: ErrorComponent},
   {path:"**", redirectTo: "404"}
-
 ];
 
 @NgModule({

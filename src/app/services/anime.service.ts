@@ -15,4 +15,9 @@ export class AnimeService {
     })
   }
 
+  linkId = "https://api.jikan.moe/v3/anime/";
+  getInfoId(id: any){
+    return this.http.get(this.linkId + id);
+  }
+
 }

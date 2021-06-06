@@ -9,14 +9,14 @@
             <button class="accept" (click)="getAnimes(search.value)">Search</button>
         </div>
     </div>
+    <router-outlet *ngIf='this.rt.url.split("/")[2]'></router-outlet>
     <div class="results-box" *ngIf='animes !== undefined'>
-        <div class="card-anime" (mouseenter)="filter(card)" (mouseenter)="show(div)" (mouseleave)="unfilter(card)" (mouseleave)="unshow(div)" *ngFor="let item of animes.results">
+        <div class="card-anime" (mouseenter)="filter(card); show(div)" (mouseleave)="unfilter(card); unshow(div)" *ngFor="let item of animes.results">
             <img src={{item.image_url}} #card>
-            <div class="description-anime" #div>
+            <div [routerLink]="['/anime', item.mal_id]" class="description-anime" #div>
                 <h2>{{item.title}}</h2>
                 <p>{{item.synopsis}}</p>
             </div>
         </div>
-        <router-outlet></router-outlet>
     </div>
 </div>

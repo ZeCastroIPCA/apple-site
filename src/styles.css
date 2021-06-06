@@ -234,14 +234,28 @@ input:focus {
 
 .header-buttons:hover {
     cursor: pointer;
+    filter: brightness(90%);
 }
 
 .header-buttons:active {
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 
 .red {
     background-color: #F15F55;
+    display: grid;
+    place-items: center;
+}
+
+.red img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    filter: contrast(0.4)
+}
+
+.red:hover img {
+    display: block;
 }
 
 .yellow {
